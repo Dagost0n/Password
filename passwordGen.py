@@ -14,6 +14,9 @@ def makePass():
 while True:
     print('Length of password?')
     length = (int(input()))
+    if length > 100:
+        print('Max length is 100, try again')
+        continue
     print(makePass())
     print('Continue (Y/N)')
     answer = input()
